@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Warehouse Update</title>
+	<style type="text/css">
+		body{
+			background: #6d83b0;
+		}
+		table{
+			border: 2px;
+			border-style: solid;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1 align="center">Welcome Admin</h1><br>
+	<h2 align="center">Warehouse update</h2>
+	<form>
+	<table align="center">
+
+		<tbody>
+			<tr>
+				<td>Branch ID</td>
+				<td><input type="text" required="required"></input></td>
+			</tr>
+			<tr>
+				<td>Branch Name</td>
+				<td><input type="text" required="required"></input></td>
+			</tr>
+			
+			<tr>
+				<td><label for="Location" required ="required">Choose a Location:</label></td>
+				<td>
+					<select name="Location" id="Location">
+    					<option value="Hyderabad">Hyderabad</option>
+    					<option value="Chennai">Chennai</option>
+    					<option value="Bangalore">Bangalore</option>
+    					<option value="Kochi">Kochi</option>
+  					</select>
+  				</td>
+			</tr>
+			<tr>
+				<td>Contact number</td>
+				<td><input type="text" name="Contact" required="required" pattern="[6-9]{1}[0-9]{9}"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="Submit"></input></td>
+				<td><input type="reset" name="Reset"></td>
+			</tr>
+		</tbody>
+	</table>
+</form>
+</body>
+</html>
