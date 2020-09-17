@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTS-User Register</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: #EED426;
+        }
+        h1 {
+            color: #006666;
+            font-family: Verdana;
+            text-align: center;
+        }
+        
+    </style>
+    <h1>Courier Tracking System</h1>
+    <table align="center">
+    <form method="POST">
+        <tr>
+            <td><label>First Name</label></td>
+            <td>
+                <input type="text" name="first name" id="name1" placeholder="Enter the first name" pattern="[a-zA-Z\s]*" required>
+            </td>
+        </tr>
+         <tr>
+            <td><label>Last Name</label></td>
+            <td>
+                <input type="text" name="last name" id="name2" placeholder="Enter the last name" pattern="[a-zA-Z\s]*" required>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Gender</label></td>
+            <td>
+                <input type="radio" value="Male" id="g1" name="gender" required>
+                <label>Male</label>
+                <input type="radio" value="Female" id="g2" name="gender">
+                <label>Female</label>
+                <input type="radio" value="Other" id="g3" name="gender">
+                <label>Other</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label>UserName</label></td>
+            <td>
+                <input type="text" name="username" id="user" placeholder="Enter the username" pattern="[a-zA-Z]*" required>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><label>Email</label></td>
+            <td>
+                <input type="email" name="email" placeholder="abc@gmail.com" required>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Mobile Number</label></td>
+            <td>
+                <input type="text" name="mobile" placeholder="Enter the Mobile Number" pattern="^[789]\d{9}$"required>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Password</label></td>
+            <td>
+                <input type="password" name="pass" placeholder="Enter the Password" required>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><input type="button" id="submit" name="submit" value="Submit"></td>
+            <td><input type="reset" name="clear" value="Reset"></td>
+            <td><button onclick="location.href='loginUser.html';" id="myButton" class="float-left submit-button">Login Page</button></td>
+        </tr>
+
+        
+        <br>
+    </form>
+</table>
+</body>
+</html>

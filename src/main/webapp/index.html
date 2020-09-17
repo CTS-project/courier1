@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courier Tracking System</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: #EED426;
+        }
+        h1 {
+            color: #006666;
+            font-family: Verdana;
+            text-align: center;
+        }
+        
+        
+    </style>
+    <h1>Courier Tracking System</h1>
+    <form method="post">
+         <table align="center">
+        <tr>
+            <td><label><h3>Login As</h3></label></td>
+            <td>
+                <select onchange="location= this.options[this.selectedIndex].value;">
+                <option value="-1">Select User Type</option>
+                <option value="LoginAdmin.html">Admin</option>
+                <option value="LoginUser.html">User</option>
+                <option value="LoginStaff.html">Staff</option>
+                </select>
+            </td>
+        </tr>
+        </table>
+        </form>
+</body>
+</html>

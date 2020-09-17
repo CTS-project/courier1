@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTS-Admin Login</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: #EED426;
+        }
+        h1 {
+            color: #006666;
+            font-family: Verdana;
+            text-align: center;
+        }
+        
+    </style>
+    <h1>Courier Tracking System</h1>
+    
+    <form method="POST">
+        <table align="center">
+        <tr>
+            <td><label>Email</label></td>
+            <td>
+                <input type="email" name="email" placeholder="abc@gmail.com" required>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Password</label></td>
+            <td>
+                <input type="password" name="pass" placeholder="Enter the Password" required>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><input type="button" id="submit" name="submit" value="Login"></td>
+            <td><input type="reset" name="clear" value="Reset"></td>
+            <td><button onclick="location.href='indexUser.html';" id="myButton" class="float-left submit-button">Register Here</button></td>
+        </tr>
+        </table>
+    </form>
+
+</body>
+</html>
